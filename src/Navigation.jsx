@@ -1,18 +1,20 @@
 import React from "react";
 import logo from './assets/Frame 25.png';
+import "./Navigation.css";
+
 export default function Navigation() {
   return (
-    <header>
-      <img src={logo}></img>
+    <header className="header">
+      <img className="header__img" src={logo}></img>
       <nav>
-        <ul>
-          <li>
+        <ul className="header__ul">
+          <li className="header__ul-li">
             Абонементы
           </li>
-          <li>
+          <li className="header__ul-li">
             Преподаватели
           </li>
-          <li>
+          <li className="header__ul-li">
             Контакты
           </li>
         </ul>

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 30px; */
+    padding: 10px 10%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.header__img {
+    max-width: 120px;
+}
+
+.header__ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    color: white;
+    margin: 0;
+}
