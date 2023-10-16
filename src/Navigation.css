@@ -5,8 +5,11 @@
     /* padding: 10px 30px; */
     padding: 10px 10%;
     box-sizing: border-box;
-    position: relative;
-    z-index: 2;
+    /* position: sticky; */
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 4;
 }
 
 .header__img {
