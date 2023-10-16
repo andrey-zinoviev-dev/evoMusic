@@ -3,7 +3,8 @@ import Offer from "./Offer";
 import './App.css'
 import Advantages from './Advantages';
 import Navigation from './Navigation';
-
+import Promo from './Promo';
+import Gallery from './Gallery';
 function App() {
   return (
     <>
@@ -11,6 +12,8 @@ function App() {
      <Welcome></Welcome>
      <Offer></Offer>
      <Advantages></Advantages>
+     <Promo></Promo>
+     <Gallery></Gallery>
     </>
   )
 }

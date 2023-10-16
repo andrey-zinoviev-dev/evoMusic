@@ -10,6 +10,7 @@
     width: 100%;
     top: 0px;
     z-index: 4;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .header__img {

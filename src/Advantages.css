@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 30px 0;
 }
 .advantages__text-headline {
   font-size: 54px;
@@ -25,7 +26,25 @@
   font-size: 20px;
   max-width: 420px;
   text-align: left;
+  line-height: 2;
+  translate: 0 20px;
 }
 .advantages__text-p-span {
   color: #F9B233;
+}
+.advantages__ul {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+  grid-template-columns: repeat(3, minmax(140px, 220px));
+  gap: 30px;
+}
+.advantages__ul-li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 250px;
+}
+.advantages__ul-li-p {
+  margin: 0;
 }
