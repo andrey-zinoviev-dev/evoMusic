@@ -1,0 +1,37 @@
+.students__ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
+    grid-auto-rows: minmax(120px, 160px);
+    gap: 25px;
+    margin: 25px 0 0 0;
+}
+.students__ul-li {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.students__ul-li-headline, .students__ul-li-p {
+    margin: 0;
+}
+.students__ul-li-p {
+    letter-spacing: 2px;
+    margin: auto 0;
+}
+.students__ul-btn {
+    font-size: 14px;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}

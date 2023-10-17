@@ -49,9 +49,18 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #dbdbdb;
+}
+body::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #F9B233;
+}
 
 section {
-  background-image: linear-gradient(120deg, #F9B233 25%, black 25%);
+  background-color: black;
+  /* background-image: linear-gradient(120deg, #F9B233 25%, black 25%); */
   color: white;
   position: relative;
   width: 100%;

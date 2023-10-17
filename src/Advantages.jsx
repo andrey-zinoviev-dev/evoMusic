@@ -3,7 +3,7 @@ import advantage1Pic from "./assets/Vector.png";
 import Advantage2Pic from "./assets/Group.png";
 import Advantage3Pic from "./assets/Group-1.png";
 import Advantage4Pic from "./assets/ClockThick.png";
-import AdvantageCover from "./assets/the-ultimate-guide-to-buying-micropone-for-recording-studio_1.png";
+// import AdvantageCover from "./assets/the-ultimate-guide-to-buying-micropone-for-recording-studio_1.png";
 
 export default function Advantages() {
   return (
@@ -32,7 +32,7 @@ export default function Advantages() {
           </li>
         </ul>
       </div>
-      <img className="advantages__cover" src={AdvantageCover}></img>
+      {/* <img className="advantages__cover" src={AdvantageCover}></img> */}
     </section>
   )
 }
