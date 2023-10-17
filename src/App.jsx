@@ -7,6 +7,7 @@ import Promo from './Promo';
 import Gallery from './Gallery';
 import Students from './Students';
 import Steps from './Steps';
+import FAQ from './FAQ';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
      <Gallery></Gallery>
      <Students></Students>
      <Steps></Steps>
+     <FAQ></FAQ>
     </>
   )
 }

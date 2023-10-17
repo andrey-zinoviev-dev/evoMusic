@@ -8,7 +8,9 @@ export default function Steps() {
                 <ul className="steps__ul">
                     {steps.map((step,index) => {
                         return <li key={`step_${index}`}>
-                            <p>{step}</p>
+                            <h4>{step.desc}</h4>
+                            <p></p>
+                            {/* <img src={`/src/assets/${step.image}`}></img> */}
                         </li>
                         // return <li key=`step_${index}`></li>
                     })}
@@ -16,4 +18,4 @@ export default function Steps() {
             </div>
         </section>
     )
-};
+}

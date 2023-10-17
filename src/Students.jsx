@@ -40,8 +40,26 @@ export default function Students() {
         </h2>
         <ul className="students__categories">
           <li className="students__categories-li">Все</li>
+          <li>
+            <svg width="45" height="42" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 3 77.4443)" stroke="white" strokeWidth="3"/>
+              <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 42 77.4443)" stroke="white" strokeWidth="3"/>
+            </svg>
+          </li>
           <li className="students__categories-li">Концерты</li>
+          <li>
+          <svg width="45" height="42" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 3 77.4443)" stroke="white" strokeWidth="3"/>
+              <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 42 77.4443)" stroke="white" strokeWidth="3"/>
+            </svg>
+          </li>
           <li className="students__categories-li">Джемы</li>
+          <li>
+          <svg width="45" height="42" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 3 77.4443)" stroke="white" strokeWidth="3"/>
+              <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 42 77.4443)" stroke="white" strokeWidth="3"/>
+            </svg>
+          </li>
           <li className="students__categories-li">Съемки</li>
         </ul>
         <ul className="students__ul">

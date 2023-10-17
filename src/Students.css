@@ -1,3 +1,12 @@
+.students__categories {
+    max-width: 540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+}
 .students__ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
