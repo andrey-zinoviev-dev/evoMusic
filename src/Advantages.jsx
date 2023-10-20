@@ -30,6 +30,10 @@ export default function Advantages() {
             <img style={{maxWidth: 87}} src={Advantage4Pic}></img>
             <p className="advantages__ul-li-p">выбор времени занятий - выбирает сам ученик в промежутке с 11 до 23; заморозка уроков на любой срок - пока все не выходишь ничего не сгорит</p>
           </li>
+          <li key="adv_04" className="advantages__ul-li">
+          <img style={{maxWidth: 87}} src={Advantage4Pic}></img>
+            <p className="advantages__ul-li-p">Гибкая система оплаты позволяет либо оплатить занятия частями, либо полностью сразу, но пользоваться всеми услугами и привилегиями школы</p>
+          </li>
         </ul>
       </div>
       {/* <img className="advantages__cover" src={AdvantageCover}></img> */}

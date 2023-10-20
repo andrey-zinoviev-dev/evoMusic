@@ -8,19 +8,22 @@ import Gallery from './Gallery';
 import Students from './Students';
 import Steps from './Steps';
 import FAQ from './FAQ';
-
+import Conversion from './Conversion';
+import Map from './Map';
 function App() {
   return (
     <>
       <Navigation></Navigation>
-     <Welcome></Welcome>
-     <Offer></Offer>
-     <Advantages></Advantages>
-     <Promo></Promo>
-     <Gallery></Gallery>
-     <Students></Students>
-     <Steps></Steps>
-     <FAQ></FAQ>
+      <Welcome></Welcome>
+      <Offer></Offer>
+      <Advantages></Advantages>
+      <Promo></Promo>
+      <Gallery></Gallery>
+      <Students></Students>
+      <Steps></Steps>
+      <FAQ></FAQ>
+      <Conversion></Conversion>
+      <Map></Map>
     </>
   )
 }

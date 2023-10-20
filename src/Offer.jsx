@@ -7,7 +7,7 @@ export default function Offer() {
       <div className="container">
         <div className="offer__text">
           <h2 className="offer__text-headline">Что мы предлагаем</h2>
-          <p className="offer__text-p">То, как ты получаешь информацию, особенно творческую, будет определять, как быстро и глубоко музыка тебя увлечет.  <b>Evolution Music состоит из некоторых особенностей, которые с легкостью позволят тебе <span className="offer__text-p-span">профессионально петь свои любимые песни и освоить стиль своего любимого исполнителя</span></b></p>
+          <p className="offer__text-p">То, как ты получаешь информацию, особенно творческую, будет определять, как быстро и глубоко музыка тебя увлечет.  <b>Evolution Music состоит из некоторых особенностей, которые с легкостью позволят тебе <span className="offer__text-p-span">профессионально петь свои любимые песни и освоить стиль своего любимого исполнителя. А далее- профессиональная запись в студии школы и издание в Правда Records и Craft Core</span></b></p>
         </div>
         <div className="offer__images">
           <div className="offer__images-qoute">
