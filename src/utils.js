@@ -1,3 +1,10 @@
+export const aboutSchoolPoints = [
+    {point: "20", desc: "Учеников в школе"},
+    {point: "5 + 1", desc: "Кабинеты + студия"},
+    {point: "Craft Core", desc: "Организация концертов и продвижение"},
+    {point: "Pravda Records", desc: "Мастеринг и подготовка к релизу"}
+];
+
 export const galleryImages = [
     "10,_Post 1.png",
     "1_Post 4.png",

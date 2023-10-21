@@ -1,13 +1,21 @@
 // import React from "react";
 import "./Offer.css";
-import Photo from "./assets/photo_2023-09-24_01-32-09 1.png";
+import { aboutSchoolPoints } from "./utils";
+
+// import Photo from "./assets/photo_2023-09-24_01-32-09 1.png";
 export default function Offer() {
   return (
     <section className="offer">
       <div className="container">
         <div className="offer__text">
-          <h2 className="offer__text-headline">Что мы предлагаем</h2>
-          <p className="offer__text-p">То, как ты получаешь информацию, особенно творческую, будет определять, как быстро и глубоко музыка тебя увлечет.  <b>Evolution Music состоит из некоторых особенностей, которые с легкостью позволят тебе <span className="offer__text-p-span">профессионально петь свои любимые песни и освоить стиль своего любимого исполнителя. А далее- профессиональная запись в студии школы и издание в Правда Records и Craft Core</span></b></p>
+          <div className="offer__text-headline-wrapper">
+            <p className="offer__text-p">Немного о школе</p>
+            <h2 className="offer__text-headline">Что ты получишь</h2>
+          </div>
+        </div>
+        <div>
+        <p className="offer__p">То, как ты получаешь информацию, особенно творческую, будет определять, как быстро и глубоко музыка тебя увлечет.</p>
+        <p className="offer__p"><b>Evolution Music состоит из некоторых особенностей, которые с легкостью позволят тебе <span className="offer__text-p-span">профессионально петь свои любимые песни и освоить стиль своего любимого исполнителя. А далее- профессиональная запись в студии школы и издание в Правда Records и Craft Core</span></b></p>
         </div>
         <div className="offer__images">
           <div className="offer__images-qoute">
@@ -19,7 +27,16 @@ export default function Offer() {
               <path d="M69.6442 34.5663L69.6442 33.0663L68.1442 33.0663L56.8429 33.0663C51.4379 33.0663 47.0416 28.6699 47.0416 23.265L47.0416 11.9636C47.0416 6.55869 51.4379 2.16233 56.8429 2.16232L68.1442 2.16232C73.5492 2.16232 77.9456 6.55869 77.9456 11.9636L77.9456 17.6143L77.9456 23.265L77.9456 35.979C77.9456 46.858 69.1346 55.6689 58.2556 55.6689L56.8429 55.6689C54.5458 55.6689 52.6922 53.8154 52.6922 51.5183C52.6922 49.2212 54.5458 47.3676 56.8429 47.3676L58.2556 47.3676C64.5404 47.3676 69.6442 42.2638 69.6442 35.979L69.6442 34.5663ZM24.4389 34.5663L24.4389 33.0663L22.9389 33.0663L11.6376 33.0663C6.23266 33.0663 1.83629 28.6699 1.83629 23.265L1.83628 11.9637C1.83628 6.55869 6.23265 2.16233 11.6376 2.16233L22.9389 2.16233C28.3439 2.16233 32.7403 6.55869 32.7403 11.9637L32.7403 17.6143L32.7403 23.265L32.7403 35.979C32.7403 46.858 23.9293 55.669 13.0503 55.669L11.6376 55.669C9.34052 55.669 7.48695 53.8154 7.48695 51.5183C7.48695 49.2212 9.34052 47.3676 11.6376 47.3676L13.0503 47.3676C19.3351 47.3676 24.4389 42.2638 24.4389 35.979L24.4389 34.5663Z" stroke="white" strokeWidth="3"/>
             </svg>
           </div>
-          <img className="offer__img" src={Photo} alt="Картинка"></img>
+          <ul className="offer__ul">
+            {aboutSchoolPoints.map((point) => {
+              return <li className="offer__ul-li" key={point.point}>
+                <p className="offer__ul-li-p">{point.point}</p>
+                <div className="offer__ul-li-div"></div>
+                <p className="offer__ul-li-p">{point.desc}</p>
+              </li>
+            })}
+          </ul>
+          {/* <img className="offer__img" src={Photo} alt="Картинка"></img> */}
         </div>
       </div>
       

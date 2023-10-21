@@ -11,7 +11,8 @@ export default function Advantages() {
       <div className="container">
         <div className="advantages__text">
           <h2 className="advantages__text-headline">Почему люди выбирают нас</h2>
-          <p className="advantages__text-p">Мы не просто учим петь, мы сразу работаем с <span className="advantages__text-p-span">произношением</span>, <span className="advantages__text-p-span">зажимами на сцене</span>, а также переносим эти знания на конкретно <span className="advantages__text-p-span">твои задачи и запросы</span></p>
+          {/* <div></div> */}
+          {/* <p className="advantages__text-p">Мы не просто учим петь, мы сразу работаем с <span className="advantages__text-p-span">произношением</span>, <span className="advantages__text-p-span">зажимами на сцене</span>, а также переносим эти знания на конкретно <span className="advantages__text-p-span">твои задачи и запросы</span></p> */}
         </div>
         <ul className="advantages__ul">
           <li key="adv_00" className="advantages__ul-li">
