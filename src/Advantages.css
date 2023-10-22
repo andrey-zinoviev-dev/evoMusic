@@ -15,8 +15,9 @@
 }
 .advantages__text {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 0 30px 0;
   position: relative;
   box-sizing: border-box;
@@ -40,11 +41,11 @@
 }
 .advantages__text-p {
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   max-width: 420px;
   text-align: left;
-  line-height: 2;
-  translate: 0 20px;
+  /* line-height: 2; */
+  /* translate: 0 20px; */
 }
 .advantages__text-p-span {
   color: #F9B233;
@@ -52,13 +53,13 @@
 .advantages__ul {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
-  /* grid-template-columns: repeat(3, minmax(140px, 220px)); */
-  grid-template-columns: repeat(auto-fit, minmax(140px, 480px));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 280px));
+  /* grid-template-columns: repeat(auto-fit, minmax(140px, 480px)); */
   gap: 30px;
 }
 .advantages__ul-li {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* align-items: center; */
   align-items: stretch;
   /* justify-content: flex-start; */
@@ -78,19 +79,45 @@
   justify-content: space-between;
   align-items: stretch;
   text-align: left;
-  max-width: 180px;
+  /* max-width: 180px; */
 }
 .advantages__ul-li-headline {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
+  /* border-bottom: 1px solid white; */
+  /* box-sizing: border-box; */
+  /* padding: 0 0 5px 0; */
 }
 .advantages__ul-li-headline, .advantages__ul-li-p {
   margin: 0;
 }
 .advantages__ul-li-p {
   color: #b9b9b9;
+  margin: 5px 0 0 0;
+  box-sizing: border-box;
+  padding: 5px 0 0 0;
+  border-top: 1px solid white;
 }
 .advantages__ul-li-img {
   align-self: center;
-  max-width: 180px;
+  width: 100%;
+  display: none;
+  /* max-width: 180px; */
+}
+
+@media screen and (max-width: 1439px) {
+  .advantages__ul {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 220px));
+  }
+  .advantages__ul-li {
+    height: 220px;
+    padding: 15px;
+  }
+  .advantages__ul-li-headline {
+    font-size: 16px;
+    
+  }
+  .advantages__ul-li-p {
+    font-size: 14px;
+  }
 }

@@ -10,6 +10,7 @@ export default function Advantages() {
     <section className="advantages">
       <div className="container">
         <div className="advantages__text">
+          <p className="advantages__text-p">Немного о школе</p>
           <h2 className="advantages__text-headline">Почему люди выбирают нас</h2>
           {/* <div></div> */}
           {/* <p className="advantages__text-p">Мы сразу работаем с <span className="advantages__text-p-span">произношением</span>, <span className="advantages__text-p-span">зажимами на сцене</span>, а также переносим эти знания на конкретно <span className="advantages__text-p-span">твои задачи и запросы</span></p> */}
@@ -21,13 +22,14 @@ export default function Advantages() {
               <p className="advantages__ul-li-p">Голос сразу записывается во время занятия вокалом для исправления ошибок</p>
             </div>
             <img className="advantages__ul-li-img" /*style={{maxWidth: 210}}*/ src={advantage1Pic}></img>
-            
+            <p>Навыки</p>
           </li>
           <li key="adv_01" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
               <h4 className="advantages__ul-li-headline">Сценическая психология</h4>
               <p className="advantages__ul-li-p">Отработка зажимов и стеснений при выступлении, а также сценической речи</p>
             </div>
+            <p>Выступления</p>
             <img className="advantages__ul-li-img" /*style={{maxWidth: 40}}*/ src={Advantage2Pic}></img>
             {/* <img style={{maxWidth: 40}} src={Advantage2Pic}></img> */}
             {/* <p className="advantages__ul-li-p">В школе есть комната со сценой и зеркалами, в которой идет отработка поведения при выступлении,  зажимов и стеснений при выступлении, а также сценической речи</p> */}
@@ -35,10 +37,17 @@ export default function Advantages() {
           <li key="adv_02" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
               <h4 className="advantages__ul-li-headline">Запись песен и клипов</h4>
-              <p className="advantages__ul-li-p">Профессионально записываем песни в студии в школе и снимаем клипы видео продакшеном, а также издаем творчество через партнеров Правда Records и Craft Core</p>
+              <p className="advantages__ul-li-p">Профессионально записываем песни в студии в школе и снимаем клипы видео продакшеном</p>
             </div>
+            <p>Запись</p>
             <img className="advantages__ul-li-img" /*style={{maxWidth: 125}}*/ src={Advantage3Pic}></img>
             {/* <p className="advantages__ul-li-p">Профессионально записываем песни в студии в школе и снимаем клипы видео продакшеном, а также издаем творчество через партнеров Правда Records и Craft Core</p> */}
+          </li>
+          <li key="adv_04" className="advantages__ul-li">
+            <div className="advantages__ul-li-text">
+              <h4 className="advantages__ul-li-headline">Мастеринг и издание</h4>
+              <p className="advantages__ul-li-p">Мастеринг песен партнерами Pravda Records и продвижение Craft Core</p>
+            </div>
           </li>
           <li key="adv_03" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
@@ -46,6 +55,7 @@ export default function Advantages() {
               <p className="advantages__ul-li-p">выбор времени занятий - выбирает сам ученик в промежутке с 11 до 23; заморозка уроков на любой срок - пока все не выходишь ничего не сгорит</p>
             </div>
             <img className="advantages__ul-li-img" /*style={{maxWidth: 87}}*/ src={Advantage4Pic}></img>
+            <p>График</p>
             {/* <img style={{maxWidth: 87}} src={Advantage4Pic}></img> */}
             {/* <p className="advantages__ul-li-p">выбор времени занятий - выбирает сам ученик в промежутке с 11 до 23; заморозка уроков на любой срок - пока все не выходишь ничего не сгорит</p> */}
           </li>
