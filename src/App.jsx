@@ -1,3 +1,4 @@
+import React from 'react';
 import Welcome from './Welcome';
 import Offer from "./Offer";
 import './App.css'
@@ -11,18 +12,21 @@ import FAQ from './FAQ';
 import Conversion from './Conversion';
 import Map from './Map';
 function App() {
+  //states
+  const [scrollToConversion, setScrollToConversion] = React.useState(false);
+
   return (
     <>
       <Navigation></Navigation>
-      <Welcome></Welcome>
+      <Welcome setScrollToConversion={setScrollToConversion}></Welcome>
       <Offer></Offer>
       <Advantages></Advantages>
       <Promo></Promo>
       <Gallery></Gallery>
       <Students></Students>
-      <Steps></Steps>
+      {/* <Steps></Steps> */}
       <FAQ></FAQ>
-      <Conversion></Conversion>
+      <Conversion scrollToConversion={scrollToConversion}></Conversion>
       <Map></Map>
     </>
   )

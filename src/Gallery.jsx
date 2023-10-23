@@ -4,7 +4,10 @@ export default function Gallery() {
     return (
         <section className="gallery">
             <div className="container">
-                <h2 className="gallery__headline">Как выглядит наша школа</h2>
+                <div className="gallery__text">
+                    <p>Немного фотографий школы</p>
+                    <h2 className="gallery__text-headline">Как выглядит Evolution Music</h2>
+                </div>
                 <ul className="galley__ul">
                     {galleryImages.map((image, index) => {
                         return <li key={index} className="gallery__ul-li">

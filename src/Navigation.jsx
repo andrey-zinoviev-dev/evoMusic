@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import logo from './assets/Frame 25.png';
 import "./Navigation.css";
 
@@ -9,7 +9,7 @@ export default function Navigation() {
       <nav>
         <ul className="header__ul">
           <li className="header__ul-li">
-            Абонементы
+            Преимущества
           </li>
           <li className="header__ul-li">
             Преподаватели
