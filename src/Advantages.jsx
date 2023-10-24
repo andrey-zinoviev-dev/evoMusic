@@ -5,7 +5,7 @@ export default function Advantages() {
   return (
     <section className="advantages">
       <div className="container">
-        <div className="advantages__text">
+        <div className="advantages__text header-wrapper-margin">
           <p className="advantages__text-p">Немного о школе</p>
           <h2 className="advantages__text-headline">Почему люди выбирают нас</h2>
           {/* <div></div> */}

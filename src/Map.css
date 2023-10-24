@@ -54,6 +54,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1439px) {
+  .map__wrapper {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .map__wrapper {
     flex-direction: column;

@@ -137,7 +137,7 @@ export default function Students() {
         </div>
         <ul className="students__ul">
           {students.map((student, index) => {
-            return <motion.li initial="rest" animate="rest" variants={studentVariant} whileHover="hover" className="students__ul-li" style={{backgroundImage:`url(/src/assets/${student.image})`}} key={index}>
+            return <motion.li initial="rest" animate="rest" variants={studentVariant} whileHover="hover" className="students__ul-li" style={{backgroundImage:`url(${student.image})`}} key={index}>
               <motion.button variants={expVariant} onClick={() => {
                 // console.log('yes');
                 setSelectedStudent(student);
@@ -158,7 +158,7 @@ export default function Students() {
           }}>Закрыть</button>
           <h3 className="students__selected-headline">Как {selectedStudent.name} поет?</h3>
           <div className="students__selected-content-wrapper">
-            <img className="students__selected-content-wrapper-img" src={`/src/assets/${selectedStudent.image}`}></img>
+            <img className="students__selected-content-wrapper-img" src={selectedStudent.image}></img>
             <p className="students__selected-content-wrapper-p">{selectedStudent.name} занимается уже {selectedStudent.exp}</p>
           </div>
         </div>
