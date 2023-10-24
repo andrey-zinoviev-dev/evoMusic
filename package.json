@@ -1,7 +1,7 @@
 {
   "name": "evomusic",
   "homepage": "https://andrey-zinoviev-dev.github.io/evoMusic",
-  "base": "/evoMusic",
+  "base": "/evoMusic/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
