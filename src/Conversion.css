@@ -128,6 +128,9 @@
   .conversion__signature {
     padding: 15px;
   }
+  .conversion__wrapper {
+    width: 100%;
+  }
   .conversion__form {
     padding: 15px;
   }
