@@ -27,3 +27,9 @@
     color: white;
     margin: 0;
 }
+
+@media screen and (max-width: 540px) {
+    .header__ul {
+        display: none;
+    }
+}

@@ -22,7 +22,7 @@ export default function Conversion({scrollToConversion}) {
       <div className="container">
         <div className="conversion__text header-wrapper-margin">
           <p className="conversion__text-p">Стать на шаг ближе к творческой мечте</p>
-          <h2 className="conversion__text-headline">Запись на занятие</h2>
+          <h2 className="conversion__text-headline">Запись на бесплатное занятие</h2>
         </div>
 
         <div className="conversion__wrapper">
@@ -37,7 +37,7 @@ export default function Conversion({scrollToConversion}) {
             
             {/* <img className="conversion__form-logo" src={Logo}></img> */}
             <div className="conversion__form-wrapper">
-              <h3 className="conversion__form-headline">Записаться на урок</h3>
+              <h3 className="conversion__form-headline">Записаться на бесплатный урок</h3>
               <img className="conversion__signature-cover" src={Logo}></img>
             </div>
 

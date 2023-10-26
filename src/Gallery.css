@@ -84,5 +84,6 @@
     .gallery__text-headline {
         font-size: 28px;
         height: 100%;
+        text-align: left;
     }
 }

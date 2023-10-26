@@ -179,6 +179,7 @@
   }
   .offer__images-qoute {
     align-self: flex-start;
+    margin: 0 0 50px 0;
   }
   .offer__ul {
     align-self: flex-end;
@@ -200,7 +201,7 @@
     height: 100%;
   }
   .offer__benefits {
-    margin: 50px auto 0 auto;
+    margin: 50px auto;
   }
   .offer__ul {
     flex-wrap: wrap;
