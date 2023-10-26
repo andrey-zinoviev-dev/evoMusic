@@ -1,6 +1,6 @@
 // import React from "react";
 import "./Offer.css";
-import { aboutSchoolPoints } from "./utils";
+import { aboutSchoolPoints, benefits } from "./utils";
 
 // import Photo from "./assets/photo_2023-09-24_01-32-09 1.png";
 export default function Offer() {
@@ -10,13 +10,22 @@ export default function Offer() {
         <div className="offer__text">
           <div className="offer__text-headline-wrapper header-wrapper-margin">
             <p className="offer__text-p">Немного о школе</p>
-            <h2 className="offer__text-headline">Что ты получишь</h2>
+            <h2 className="offer__text-headline">Что ты получишь за урок</h2>
           </div>
         </div>
-        <div style={{margin: "auto 0"}}>
-        {/* <p className="offer__p">То, как ты получаешь информацию, особенно творческую, будет определять, как быстро и глубоко музыка тебя увлечет.</p> */}
+        <ul className="offer__benefits">
+          {benefits.map((benefit) => {
+            return <li className="offer__benefits-li" key={benefit.title}>
+              <h4 className="offer__benefits-li-h">{benefit.title}</h4>
+              <div className="offer__benefits-li-div"></div>
+              <p className="offer__benefits-li-p">{benefit.desc}</p>
+            </li>
+          })}
+        </ul>
+        {/* <div style={{margin: "auto 0"}}>
+
         <p className="offer__p"><b>Evolution Music состоит из некоторых особенностей, которые с легкостью позволят тебе <span className="offer__text-p-span">профессионально петь свои любимые песни и освоить стиль своего любимого исполнителя. А далее- профессиональная запись в студии школы и издание в Правда Records и Craft Core</span></b></p>
-        </div>
+        </div> */}
         <div className="offer__images">
           <div className="offer__images-qoute">
             <svg className="offer__images-qoute-svg" width="95" height="25" viewBox="0 0 80 57" fill="none" xmlns="http://www.w3.org/2000/svg">

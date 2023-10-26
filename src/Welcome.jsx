@@ -8,7 +8,7 @@ export default function Welcome({setScrollToConversion}) {
       <div className="container container-welcome">
         <div className="welcome__content-text">
           <h1 className="welcome__content-headline header-wrapper-margin">Оживи свою музыкальную мечту в Evolution Music School</h1>
-          <p className="welcome__content-p">Сможешь профессионально петь любимые песни как твой любимый музыкант</p>
+          <p className="welcome__content-p">Применяем эволюционный подход к обучению и созданию артиста: сначала запись вокала, потом оттачивание навыков. Современное музыкальное образование и саунд-продакшн для всех!</p>
         </div>
         <button onClick={() => {
           setScrollToConversion(true);
