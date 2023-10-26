@@ -1,3 +1,27 @@
+.students__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 0 0 15px;
+    margin: 0 0 30px 0;
+}
+.students__text::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #CC2020;
+    content: "";
+}
+.students__text-headline {
+    font-size: 42px;
+    translate: 0 10%;
+    height: 55px;
+}
 .students__categories {
     max-width: 540px;
     margin: 0 auto;
@@ -71,6 +95,9 @@
 }
 
 @media screen and (max-width: 540px) {
+    .students__text-p {
+        text-align: left;
+    }
     .students__categories-li {
         font-size: 14px;
     }

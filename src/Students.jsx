@@ -54,9 +54,13 @@ export default function Students() {
     <section className="students">
       <div className="container">
         <div>
-          <h2 className="students__headline">
-            Ученики
-          </h2>
+          <div className="students__text">
+            <p className="students__text-p">Наши ученики, нажми на них, чтобы их увидеть и услышать</p>
+            <h2 className="students__text-headline">
+              Ученики
+            </h2>
+          </div>
+
           <ul className="students__categories" ref={categoriesRef}>
             <li className="students__categories-li" onClick={() => {
               setSelectedCategory((prevValue) => {
