@@ -6,7 +6,7 @@ export const benefits = [
 ];
 
 export const aboutSchoolPoints = [
-    {point: "679", desc: "Учеников в школе"},
+    {point: "679", desc: "Счастливых учеников"},
     {point: "5 + 1", desc: "Кабинеты + студия"},
     {point: "Craft Core", desc: "Партнер по организации концертов и продвижению"},
     {point: "Pravda Records", desc: "Партнер по мастерингу и подготовке к релизу"}
