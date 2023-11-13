@@ -13,12 +13,12 @@ export const aboutSchoolPoints = [
 ];
 
 export const galleryImages = [
-    new URL('./assets/10,_Post 1.png', import.meta.url).href,
-    new URL("./assets/1_Post 4.png", import.meta.url).href,
-    new URL("./assets/1_Post 5.png", import.meta.url).href,
-    new URL("./assets/9,_Post 2.png", import.meta.url).href,
-    new URL("./assets/5818530f9ae94fa956280a06b533adf6_wood_wall_paneling_wood_walls 1.png", import.meta.url).href,
-    new URL("./assets/IMG_9930 1.png", import.meta.url).href,
+    new URL('./assets/IMG_6251-18-1.jpg', import.meta.url).href,
+    new URL("./assets/IMG_6342-106-1.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6465-62.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6668-180.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6694-198.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6758-243.jpg", import.meta.url).href,
 ];
 
 export const students = [

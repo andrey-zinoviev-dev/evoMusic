@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 1439px) {
     .welcome {
-        padding: 0 5%;
+        padding: 10%;
     }
     .welcome__content-headline {
         font-size: 42px;

@@ -129,6 +129,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 1439px) {
+  section {
+    padding: 10%;
+  }
+}
+
 /* @media screen and (max-width: 1439px) {
   .container {
     max-width: 920px;
