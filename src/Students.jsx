@@ -1,5 +1,5 @@
 import React from "react";
-import { students } from "./utils";
+import { students, categories } from "./utils";
 import { motion } from "framer-motion";
 import "./Students.css";
 
@@ -34,21 +34,22 @@ export default function Students() {
   };
   //states
   const [selectedStudent, setSelectedStudent] = React.useState({});
-  const [selectedCategory, setSelectedCategory] = React.useState("Все")
+  // const [selectedCategoryIndex, setSelectedCategoryIndex] = React.useState(0)
 
   //refs
-  const categoriesRef = React.useRef();
+  // const categoriesRef = React.useRef();
 
-  React.useEffect(() => {
-    // const categoriesToFlter = Array.from(categoriesRef.current.children)
-    // const categories = categoriesToFlter.filter((filter) => {
-    //   return filter.classList.length > 0;
-    // });
-    // const categoryToHighlight = categories[categories.findIndex((category) => {
-    //   return category.textContent === selectedCategory;
-    // })];
-    // categoryToHighlight.classList.add("active_state");
-  }, [selectedCategory])
+  // React.useEffect(() => {
+  //   categoriesRef.current.children[selectedCategoryIndex].querySelector("button").classList.add('category_active');
+  //   // const categoriesToFlter = Array.from(categoriesRef.current.children)
+  //   // const categories = categoriesToFlter.filter((filter) => {
+  //   //   return filter.classList.length > 0;
+  //   // });
+  //   // const categoryToHighlight = categories[categories.findIndex((category) => {
+  //   //   return category.textContent === selectedCategory;
+  //   // })];
+  //   // categoryToHighlight.classList.add("active_state");
+  // }, [selectedCategoryIndex])
 
   return (
     <section className="students">
@@ -61,83 +62,19 @@ export default function Students() {
             </h2>
           </div>
 
-          <ul className="students__categories" ref={categoriesRef}>
-            <li className="students__categories-li" onClick={() => {
-              setSelectedCategory((prevValue) => {
-                // console.log(prevValue);
-                // const categoriesToFlter = Array.from(categoriesRef.current.children)
-                // const categories = categoriesToFlter.filter((filter) => {
-                //   return filter.classList.length > 0;
-                // });
-                // const categoryToDarken = categories[categories.findIndex((category) => {
-                //   return category.textContent === prevValue;
-                // })];
-                // console.log(categoryToDarken);
-                return "Все";
-              });
-            }}>Все</li>
-            <li>
-              <svg className="students__categories-li-svg" width="45" height="42" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 3 77.4443)" stroke="white" strokeWidth="3"/>
-                <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 42 77.4443)" stroke="white" strokeWidth="3"/>
-              </svg>
-            </li>
-            <li className="students__categories-li" onClick={() => {
-              // setSelectedCategory();
-              setSelectedCategory((prevValue) => {
-                // const categoriesToFlter = Array.from(categoriesRef.current.children)
-                // const categories = categoriesToFlter.filter((filter) => {
-                //   return filter.classList.length > 0;
-                // });
-                // const categoryToDarken = categories[categories.findIndex((category) => {
-                //   return category.textContent === prevValue;
-                // })].classList.remove('active_state');
-                // console.log(categoryToDarken);
-                return "Концерты";
-              });
-            }}>Концерты</li>
-            <li>
-            <svg className="students__categories-li-svg" width="45" height="42" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 3 77.4443)" stroke="white" strokeWidth="3"/>
-                <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 42 77.4443)" stroke="white" strokeWidth="3"/>
-              </svg>
-            </li>
-            <li className="students__categories-li" onClick={() => {
-              // setSelectedCategory("Джемы");
-              setSelectedCategory((prevValue) => {
-                // const categoriesToFlter = Array.from(categoriesRef.current.children)
-                // const categories = categoriesToFlter.filter((filter) => {
-                //   return filter.classList.length > 0;
-                // });
-                // const categoryToDarken = categories[categories.findIndex((category) => {
-                //   return category.textContent === prevValue;
-                // })].classList.remove('active_state')  ;
-                // console.log(categoryToDarken);
-                return "Джемы";
-              });
-            }}>Джемы</li>
-            <li>
-            <svg className="students__categories-li-svg" width="45" height="42" viewBox="0 0 81 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 3 77.4443)" stroke="white" strokeWidth="3"/>
-                <line y1="-1.5" x2="85.7378" y2="-1.5" transform="matrix(0.452809 -0.891607 0.990154 0.13998 42 77.4443)" stroke="white" strokeWidth="3"/>
-              </svg>
-            </li>
-            <li className="students__categories-li" onClick={() => {
-              // setSelectedCategory("Съемки");
-              setSelectedCategory((prevValue) => {
-                // const categoriesToFlter = Array.from(categoriesRef.current.children)
-                // const categories = categoriesToFlter.filter((filter) => {
-                //   return filter.classList.length > 0;
-                // });
-                // const categoryToDarken = categories[categories.findIndex((category) => {
-                //   return category.textContent === prevValue;
-                // })];
-                // console.log(categoryToDarken);
-                // categories[categoryToDarken].classList.remove('active_state');
-                return "Съемки";
-              });
-            }}>Съемки</li>
-          </ul>
+          {/* <ul className="students__categories" ref={categoriesRef}>
+            {categories.map((category, index) => {
+              return <li key={category}>
+                <button onClick={() => {
+                  // evt.target.style.scale = 
+                  setSelectedCategoryIndex((prevValue) => {
+                    categoriesRef.current.children[prevValue].querySelector('button').classList.remove('category_active');
+                    return index;
+                  });
+                }}>{category}</button>
+              </li>
+            })}
+          </ul> */}
         </div>
         <ul className="students__ul">
           {students.map((student, index) => {

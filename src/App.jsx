@@ -20,10 +20,11 @@ function App() {
       <Navigation></Navigation>
       <Welcome setScrollToConversion={setScrollToConversion}></Welcome>
       <Offer></Offer>
+      <Students></Students>
       <Advantages></Advantages>
       {/* <Promo></Promo> */}
       <Gallery></Gallery>
-      <Students></Students>
+      
       {/* <Steps></Steps> */}
       <FAQ></FAQ>
       <Conversion scrollToConversion={scrollToConversion}></Conversion>

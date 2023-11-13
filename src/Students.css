@@ -34,7 +34,7 @@
 .students__categories-li {
     color: rgb(183, 183, 183);
 }
-.active_state {
+.category_active {
     color: #F9B233;
 }
 .students__ul {
@@ -75,7 +75,7 @@
     box-sizing: border-box;
 }
 .students__selected {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

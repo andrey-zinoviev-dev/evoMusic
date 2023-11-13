@@ -1,7 +1,17 @@
 .offer {
-  background-image: url('./assets/the-ultimate-guide-to-buying-micropone-for-recording-studio.png');
-  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  justify-content: center; */
+  /* box-sizing: border-box;
+  padding: 5% 10%; */
+  /* background-image: linear-gradient(to bottom, #f0922e, #be6138, #823c34, #422024, #000000); */
+  /* background-image: url('./assets/the-ultimate-guide-to-buying-micropone-for-recording-studio.png');
+  background-size: cover; */
 }
+/* .offer .container {
+  max-width: 1024px;
+  margin: 0 auto;
+} */
 
 .offer__text {
   display: flex;
@@ -28,8 +38,9 @@
 
 .offer__text-headline {
   font-size: 42px;
-  height: 55px;
-  translate: 0 10%;
+  /* height: 55px; */
+  /* translate: 0 10%; */
+  text-align: left;
   /* max-width: 360px; */
   margin: 0;
 }
@@ -53,11 +64,13 @@
 }
 
 .offer__benefits {
-  margin: 50px 0;
-  backdrop-filter: blur(2px);
+  /* margin: 50px 0; */
+  /* backdrop-filter: blur(2px); */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 240px));
+  /* grid-template-columns: repeat(auto-fit, minmax(140px, 240px)); */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 15px;
+  margin: 15px 0;
 }
 
 .offer__benefits-li {
@@ -67,7 +80,8 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
-  border: 2px solid #CC2020;
+  /* border: 2px solid #CC2020; */
+  border: 2px solid  white;
   box-sizing: border-box;
   padding: 10%;
   text-align: left;
@@ -75,12 +89,14 @@
 
 .offer__benefits-li-h {
   width: 100%;
+  font-size: 18px;
 }
 
 .offer__benefits-li-div {
   width: 25px;
     height: 5px;
-    background-color: #f46724;
+    background-color: #ebc228;
+    /* background-color: #f46724; */
     align-self: flex-start;
     margin: 10px 0;
     border-radius: 5px;
@@ -107,7 +123,7 @@
   min-height: 90px;
   position: relative;
   z-index: 3;
-  margin: 0 0 25px 0;
+  margin: 0 50px 25px 0;
 }
 
 .offer__images-qoute-svg {
@@ -133,7 +149,7 @@
 }
 
 .offer__ul-li {
-  height: 120px;
+  /* height: 120px; */
   width: 120px;
   display: flex;
   flex-direction: column;

@@ -12,7 +12,7 @@
   height: 50%;
   background-image: linear-gradient(45deg, #F9B233, #CC2020);
   border-radius: 32% 68% 35% 65% / 30% 30% 70% 70%;
-  filter: blur(60px);
+  filter: blur(30px);
 }
 .advantages__text {
   display: flex;
@@ -54,8 +54,9 @@
 .advantages__ul {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(140px, 280px));
-  /* grid-template-columns: repeat(auto-fit, minmax(140px, 480px)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(140px, 280px)); */
+  
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 30px;
 }
 .advantages__ul-li {
@@ -74,7 +75,7 @@
   box-sizing: border-box;
   /* padding: 10px; */
   /* padding: 25px; */
-  padding: 10px 25px
+  padding: 16px 25px;
   /* transition: all 0.5s ease-in-out;
   cursor: pointer; */
 }
