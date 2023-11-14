@@ -97,7 +97,16 @@
     object-fit: cover;
 }
 
+@media screen and (max-width: 767px) {
+    .students__text-headline {
+        font-size: 36px;
+    }
+}
+
 @media screen and (max-width: 540px) {
+    .students__text-headline {
+        font-size: 28px;
+    }
     .students__text-p {
         text-align: left;
     }
@@ -107,9 +116,9 @@
     .students__categories-li-svg {
         max-width: 20px;
     }
-    .students__ul {
+    /* .students__ul {
         grid-template-columns: repeat(auto-fit, minmax(120px, 180px));
         grid-auto-rows: minmax(120px, 180px);
         justify-content: center;
-    }
+    } */
 }

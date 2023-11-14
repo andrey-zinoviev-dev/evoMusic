@@ -27,11 +27,11 @@ export default function Conversion({scrollToConversion}) {
             {/* <img className="conversion__signature-cover" src={Image}></img> */}
           </div>
 
-          <form onSubmit={(evt) => {
+          {/* <form onSubmit={(evt) => {
             handleFormSubmit(evt);
           }} className="conversion__form">
             
-            {/* <img className="conversion__form-logo" src={Logo}></img> */}
+
             <div className="conversion__form-wrapper">
               <h3 className="conversion__form-headline">Записаться на бесплатный урок</h3>
               <img className="conversion__signature-cover" src={Logo}></img>
@@ -42,8 +42,9 @@ export default function Conversion({scrollToConversion}) {
             <input className="conversion__form-input" placeholder="Сколько занимаетесь музыкой?" type="text"></input>
             <input className="conversion__form-input" placeholder="Ваш email" type="text"></input>
             <button className="conversion__form-btn">Записаться</button>
-            {/* <div></div> */}
-          </form>
+       
+          </form> */}
+          <iframe className="conversion__form" src="https://evolution.s20.online/common/1/form/draw?id=1&amp;lead_source_id=7&amp;baseColor=205EDC&amp;borderRadius=8&amp;css=%2F%2Fcdn.alfacrm.pro%2Flead-form%2Fform.css" width="100%" height="100%" frameorder="0"></iframe>
         </div>
 
       </div>

@@ -205,8 +205,12 @@
 @media screen and (max-width: 767px) {
   .offer__text-headline {
     font-size: 36px;
-    height: 55px;
+    /* height: 55px; */
     text-align: left;
+  }
+  .offer__benefits {
+    margin: 25px auto 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
 }
 
@@ -217,7 +221,12 @@
     height: 100%;
   }
   .offer__benefits {
-    margin: 50px auto;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    max-width: 320px;
+    margin: 25px auto 0 auto;
+  }
+  .offer__benefits-li {
+    padding: 5%;
   }
   .offer__ul {
     flex-wrap: wrap;
