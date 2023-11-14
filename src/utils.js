@@ -13,12 +13,12 @@ export const aboutSchoolPoints = [
 ];
 
 export const galleryImages = [
-    new URL('./assets/IMG_6251-18-1.jpg', import.meta.url).href,
-    new URL("./assets/IMG_6342-106-1.jpg", import.meta.url).href,
-    new URL("./assets/IMG_6465-62.jpg", import.meta.url).href,
-    new URL("./assets/IMG_6668-180.jpg", import.meta.url).href,
-    new URL("./assets/IMG_6694-198.jpg", import.meta.url).href,
-    new URL("./assets/IMG_6758-243.jpg", import.meta.url).href,
+    new URL('./assets/IMG_6251-18-1-min.jpg', import.meta.url).href,
+    new URL("./assets/photo_2023-10-17_06-51-22-min.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6465-62-min.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6668-180-min.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6694-198-min.jpg", import.meta.url).href,
+    new URL("./assets/IMG_6758-243-min.jpg", import.meta.url).href,
 ];
 
 export const students = [

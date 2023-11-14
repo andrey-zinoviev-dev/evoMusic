@@ -35,10 +35,11 @@
 }
 .advantages__text-headline {
   font-size: 42px;
-  margin: 0;
+  margin: 0 0 25px 0;
+  text-align: left;
   /* max-width: 420px; */
-  translate: 0 10%;
-  height: 55px;
+  /* translate: 0 10%;
+  height: 55px; */
 }
 .advantages__text-p {
   margin: 0;

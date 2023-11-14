@@ -55,12 +55,13 @@ export default function Students() {
     <section className="students">
       <div className="container">
         <div>
-          <div className="students__text">
+          {/* <div className="students__text">
             <p className="students__text-p">Наши ученики, нажми на них, чтобы их увидеть и услышать</p>
-            <h2 className="students__text-headline">
+
+          </div> */}
+          <h2 className="students__text-headline">
               Ученики
-            </h2>
-          </div>
+          </h2>
 
           {/* <ul className="students__categories" ref={categoriesRef}>
             {categories.map((category, index) => {

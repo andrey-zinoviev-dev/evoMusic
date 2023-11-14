@@ -20,11 +20,7 @@ export default function Conversion({scrollToConversion}) {
   return (
     <section className="conversion" ref={formRef}>
       <div className="container">
-        <div className="conversion__text header-wrapper-margin">
-          <p className="conversion__text-p">Стать на шаг ближе к творческой мечте</p>
-          <h2 className="conversion__text-headline">Запись на бесплатное занятие</h2>
-        </div>
-
+        <h2 className="conversion__text-headline">Запись на бесплатное занятие</h2>
         <div className="conversion__wrapper">
           <div className="conversion__signature">
             
