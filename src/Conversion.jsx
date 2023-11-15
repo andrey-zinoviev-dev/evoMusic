@@ -3,18 +3,17 @@ import "./Conversion.css";
 import Logo from "./assets/LogoTextBlack.png";
 // import Image from "./assets/IMG_7083.jpg";
 
-export default function Conversion({scrollToConversion}) {
+export default function Conversion({scrollToConversion, setScrollToConversion}) {
   //functions
-  function handleFormSubmit(evt) {
-    evt.preventDefault();
-    console.log('yes');
-  }
 
   //refs
   const formRef = React.useRef();
 
   React.useEffect(() => {
-    scrollToConversion && formRef.current.scrollIntoView({behavior: "smooth", block: "center"})
+    scrollToConversion && formRef.current.scrollIntoView({behavior: "smooth", block: "center"});
+    setTimeout(() => {
+      setScrollToConversion(false);
+    }, 1000)
   }, [scrollToConversion])
 
   return (

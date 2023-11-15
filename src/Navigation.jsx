@@ -9,13 +9,13 @@ export default function Navigation() {
       <nav>
         <ul className="header__ul">
           <li className="header__ul-li">
-            Преимущества
+            <button>Преимущества</button>
           </li>
           <li className="header__ul-li">
-            Преподаватели
+            <button>Преподаватели</button>
           </li>
           <li className="header__ul-li">
-            Контакты
+            <button>Контакты</button>
           </li>
         </ul>
       </nav>

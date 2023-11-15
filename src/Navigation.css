@@ -28,7 +28,25 @@
     margin: 0;
 }
 
+.header__ul-li button  {
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;
+}
+.header__ul-li button:hover{
+    background-color: #646cff;
+    border: none;
+}
+
 @media screen and (max-width: 540px) {
+    .header {
+        padding: 5% 10%;
+    }
+    .header__img {
+        max-width: 75px;
+    }
     .header__ul {
         display: none;
     }

@@ -26,8 +26,8 @@ function App() {
       <Gallery></Gallery>
       
       {/* <Steps></Steps> */}
-      <FAQ></FAQ>
-      <Conversion scrollToConversion={scrollToConversion}></Conversion>
+      <FAQ></FAQ> 
+      <Conversion scrollToConversion={scrollToConversion} setScrollToConversion={setScrollToConversion}></Conversion>
       <Map></Map>
     </>
   )

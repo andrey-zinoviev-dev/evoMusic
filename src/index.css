@@ -68,8 +68,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  /* background-color: black; */
-  background-color: #e78114;
+  background-color: black;
+
+  /* background-color: #e78114; */
+
   /* background-image: linear-gradient(120deg, #F9B233 25%, black 25%); */
   color: white;
   position: relative;

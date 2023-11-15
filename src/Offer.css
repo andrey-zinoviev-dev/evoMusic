@@ -40,7 +40,7 @@
   font-size: 42px;
   /* height: 55px; */
   /* translate: 0 10%; */
-  text-align: left;
+  /* text-align: left; */
   /* max-width: 360px; */
   margin: 0;
 }
@@ -95,7 +95,7 @@
 .offer__benefits-li-div {
   width: 25px;
     height: 5px;
-    background-color: #ebc228;
+    background-color: #E6332A;
     /* background-color: #f46724; */
     align-self: flex-start;
     margin: 10px 0;
@@ -206,7 +206,7 @@
   .offer__text-headline {
     font-size: 36px;
     /* height: 55px; */
-    text-align: left;
+    /* text-align: left; */
   }
   .offer__benefits {
     margin: 25px auto 0 auto;

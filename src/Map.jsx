@@ -5,10 +5,7 @@ export default function Map() {
   return (
     <section className="map">
       <div className="container">
-        <div className="map__headline-wrapper header-wrapper-margin">
-          <p className="map__headline-p">Мы в самом центре Москвы</p>
-          <h2 className="map__headline-h">Где мы на карте</h2>
-        </div>
+      <h2 className="map__headline-h">Где мы на карте</h2>
         <div className="map__wrapper">
           <img className="map__img" src={EvoMap}></img>
           <div className="map__text">
