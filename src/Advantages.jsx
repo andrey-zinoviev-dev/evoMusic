@@ -1,9 +1,19 @@
+import React from "react";
 import "./Advantages.css";
 // import AdvantageCover from "./assets/the-ultimate-guide-to-buying-micropone-for-recording-studio_1.png";
 
-export default function Advantages() {
+export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) {
+  const AvantagesRef = React.useRef();
+
+  React.useEffect(() => {
+    scrollToAdvantages && AvantagesRef.current.scrollIntoView({behavior: "smooth", block: "center"});
+    setTimeout(() => {
+      setScrollToAdvantages(false);
+    }, 1000)
+  }, [scrollToAdvantages]);
+
   return (
-    <section className="advantages">
+    <section className="advantages" ref={AvantagesRef}>
       <div className="container">
         <h2 className="advantages__text-headline">Почему люди выбирают нас</h2>
         <ul className="advantages__ul">

@@ -1,8 +1,10 @@
 import "./Welcome.css";
-import Spline from '@splinetool/react-spline';
+import React from "react";
+// import Spline from '@splinetool/react-spline';
 // import Navigation from './Navigation';
 // import WelcomeImage from './assets/evoMusicLogoNoText 1.png';
-export default function Welcome({setScrollToConversion}) {
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
+export default function Welcome({setScrollToConversion, setLoadedApp}) {
   return (
     <section className="welcome">
       {/* <Navigation></Navigation> */}
@@ -24,7 +26,12 @@ export default function Welcome({setScrollToConversion}) {
             {window.innerWidth > 1024 ? "Нажми на картинку и потяни для вращения" : "Вращай картинку 2 пальцами"}
           </p>
         </div>
-        <Spline scene="https://prod.spline.design/csVpLVxG1oh5HjU0/scene.splinecode" />
+            <React.Suspense fallback={<div>...ЗАГРУЗКА</div>}>
+          <Spline onLoad={() => {
+            setLoadedApp(true);
+          }} scene="https://prod.spline.design/csVpLVxG1oh5HjU0/scene.splinecode" />
+
+        </React.Suspense>
       {/* <img className="welcome__img" src={WelcomeImage}></img> */}
     </section>
   )

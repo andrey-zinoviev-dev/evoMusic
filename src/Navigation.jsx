@@ -2,20 +2,26 @@
 import logo from './assets/Frame 25.png';
 import "./Navigation.css";
 
-export default function Navigation() {
+export default function Navigation({setScrollToAdvantages, setScrollToTeachers, setScrollToMap}) {
   return (
     <header className="header">
       <img className="header__img" src={logo}></img>
       <nav>
         <ul className="header__ul">
           <li className="header__ul-li">
-            <button>Преимущества</button>
+            <button onClick={() => {
+              setScrollToAdvantages(true);
+            }}>Преимущества</button>
           </li>
           <li className="header__ul-li">
-            <button>Преподаватели</button>
+            <button onClick={() => {
+              setScrollToTeachers(true);
+            }}>Преподаватели</button>
           </li>
           <li className="header__ul-li">
-            <button>Контакты</button>
+            <button onClick={() => {
+              setScrollToMap(true);
+            }}>Контакты</button>
           </li>
         </ul>
       </nav>

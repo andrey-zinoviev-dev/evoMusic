@@ -1,3 +1,5 @@
+export const scene = new URL("./assets/studio_room_2.spline", import.meta.url).href;
+
 export const benefits = [
     {title: "Много практики", desc: "Целый час практической отработки выбранной песни"},
     {title: "Запись голоса", desc: "Использование специального оборудования звукозаписи и усиления звука"},

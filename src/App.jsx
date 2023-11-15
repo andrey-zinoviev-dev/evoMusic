@@ -11,24 +11,40 @@ import Students from './Students';
 import FAQ from './FAQ';
 import Conversion from './Conversion';
 import Map from './Map';
+// const Spline = React.lazy(() => import('@splinetool/react-spline'));
+// import Spline from '@splinetool/react-spline';
 function App() {
   //states
   const [scrollToConversion, setScrollToConversion] = React.useState(false);
+  const [scrollToAdvantages, setScrollToAdvantages] = React.useState(false);
+  const [scrollToTeachers, setScrollToTeachers] = React.useState(false);
+  const [scrollToMap, setScrollToMap] = React.useState(false);
+
+  const [loadedApp, setLoadedApp] = React.useState(false);
+
+  React.useEffect(() => {
+    console.log(loadedApp);
+  }, [loadedApp])
 
   return (
     <>
-      <Navigation></Navigation>
-      <Welcome setScrollToConversion={setScrollToConversion}></Welcome>
+            {/* <React.Suspense fallback={<div>...ЗАГРУЗКА</div>}>
+          <Spline scene="https://prod.spline.design/csVpLVxG1oh5HjU0/scene.splinecode" />
+
+        </React.Suspense> */}
+    {/* <Spline scene="https://prod.spline.design/csVpLVxG1oh5HjU0/scene.splinecode" /> */}
+      <Navigation setScrollToAdvantages={setScrollToAdvantages} setScrollToTeachers={setScrollToTeachers} setScrollToMap={setScrollToMap}></Navigation>
+      <Welcome setScrollToConversion={setScrollToConversion} setLoadedApp={setLoadedApp}></Welcome>
       <Offer></Offer>
       <Students></Students>
-      <Advantages></Advantages>
+      <Advantages scrollToAdvantages={scrollToAdvantages} setScrollToAdvantages={setScrollToAdvantages}></Advantages>
       {/* <Promo></Promo> */}
       <Gallery></Gallery>
       
       {/* <Steps></Steps> */}
       <FAQ></FAQ> 
       <Conversion scrollToConversion={scrollToConversion} setScrollToConversion={setScrollToConversion}></Conversion>
-      <Map></Map>
+      <Map scrollToMap={scrollToMap} setScrollToMap={setScrollToMap}></Map>
     </>
   )
 }

@@ -1,9 +1,20 @@
+import React from "react";
 import EvoMap from "./assets/evoMusic-map.png";
 import "./Map.css";
 
-export default function Map() {
+export default function Map({scrollToMap, setScrollToMap}) {
+
+  const MapRef = React.useRef();
+
+  React.useEffect(() => {
+    scrollToMap && MapRef.current.scrollIntoView({behavior: "smooth", block: "center"});
+    setTimeout(() => {
+      setScrollToMap(false);
+    }, 1000)
+  }, [scrollToMap]);
+
   return (
-    <section className="map">
+    <section className="map" ref={MapRef}>
       <div className="container">
       <h2 className="map__headline-h">Где мы на карте</h2>
         <div className="map__wrapper">
