@@ -8,7 +8,7 @@ export default function Gallery() {
                 <ul className="galley__ul">
                     {galleryImages.map((image, index) => {
                         return <li key={index} className="gallery__ul-li">
-                            <img className="gallery__ul-li-img" src={image}></img>
+                            <img className="gallery__ul-li-img" loading="lazy" src={image}></img>
                         </li>
                     })}
 

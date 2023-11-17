@@ -46,7 +46,7 @@
     margin: 25px 0 0 0;
 }
 .students__ul-li {
-    aspect-ratio: 0.5;
+    aspect-ratio: 1/1;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -55,6 +55,9 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+.students__ul-li-img {
+    width: 100%;
 }
 .students__ul-li-headline, .students__ul-li-p {
     margin: 0;

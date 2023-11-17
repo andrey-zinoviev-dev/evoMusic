@@ -23,31 +23,63 @@ export const galleryImages = [
     new URL("./assets/IMG_6758-243-min.jpg", import.meta.url).href,
 ];
 
+export const teachers = [
+    {
+        name: "Эд Хапбутдинов",
+        image: new URL('./assets/Ed.jpg', import.meta.url).href,
+        exp: "6 лет преподавания. Звукорежиссер, саунд-продюсер",
+        favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"]
+    },
+    {
+        name: "Антон Перцев",
+        image: new URL('./assets/Anton.jpg', import.meta.url).href,
+        exp: "10 лет преподавания. Вокалист, актер театра и кино, гитарист, теле-радиоведущий, композитор",
+        favs: ["Metallica", "The Police", "Green Day", "A-ha", "HIM", "Staind", "Браво", "Константин Никольский", "Uma2rman", "ДДТ", "Муслим Магамаев"]
+    },
+    {
+        name: "Лера Козлова",
+        image: new URL('./assets/Lera.jpg', import.meta.url).href,
+        exp: "6 лет преподавания. Звукорежиссер, саунд-продюсер",
+        favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"]
+    },
+    {
+        name: "Александра Несмеянова",
+        image: new URL('./assets/Sasha.jpg', import.meta.url).href,
+        exp: "5 лет преподавания. Артист, педагог",
+        favs: ["Rachelle Farrell", "Regina Belle", "Stevie Wonder ", "Kara Marni", "Michael Jackson", "Леонид Агутин", "Алексей Чумаков", "Jamiroquai"]
+    }
+];
+
 export const students = [
     {
-        name: "Alex Petukh", 
-        image:  new URL("./assets/photo_2023-10-17_06-49-06.jpg", import.meta.url).href,
+        name: "Ян Емелин", 
+        image:  new URL("./assets/Yan.jpg", import.meta.url).href,
         exp: "20 уроков",
     }, 
     {
-        name: "Andrey Zinoviev", 
-        image: new URL("./assets/photo_2023-10-17_06-50-31.jpg", import.meta.url).href,
+        name: "Вадим Печников", 
+        image: new URL("./assets/Vadim.jpg", import.meta.url).href,
         exp: "12 уроков"
     }, 
     {
-        name: "Artem Shuster", 
-        image: new URL("./assets/photo_2023-10-17_06-51-22.jpg", import.meta.url).href,
+        name: "Камилла Галимуллина", 
+        image: new URL("./assets/Kamilla.jpg", import.meta.url).href,
         exp: "100 уроков",
     }, 
     {
-        name: "Alina Trex",
-        image: new URL("./assets/photo_2023-10-17_06-52-03.jpg", import.meta.url).href,
+        name: "Лилия Рахматулина",
+        image: new URL("./assets/Lilya.jpg", import.meta.url).href,
         exp: "9 уроков",
     },
     {
-        name: "Sergey Ponomarenko",
-        image: new URL("./assets/photo_2023-10-17_06-50-09.jpg", import.meta.url).href,
+        name: "Андрей Зиновьев",
+        image: new URL("./assets/Andrey.jpg", import.meta.url).href,
         exp: "1000 уроков",
+    },
+    {
+        name: "Артем Шустер",
+        image: new URL("./assets/photo_2023-10-17_06-51-22-min.jpg", import.meta.url).href,
+        exp: "12 уроков",
     }
 ];
 

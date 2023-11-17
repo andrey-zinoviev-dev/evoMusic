@@ -26,11 +26,10 @@ export default function Welcome({setScrollToConversion, setLoadedApp}) {
             {window.innerWidth > 1024 ? "Нажми на картинку и потяни для вращения" : "Вращай картинку 2 пальцами"}
           </p>
         </div>
-            <React.Suspense fallback={<div>...ЗАГРУЗКА</div>}>
+        <React.Suspense fallback={<div>...ЗАГРУЗКА</div>}>
           <Spline onLoad={() => {
             setLoadedApp(true);
           }} scene="https://prod.spline.design/csVpLVxG1oh5HjU0/scene.splinecode" />
-
         </React.Suspense>
       {/* <img className="welcome__img" src={WelcomeImage}></img> */}
     </section>
