@@ -15,7 +15,7 @@ export default function Teachers({scrollToTeachers, setScrollToTeachers}) {
 
   return <section className="teachers" ref={teachersRef}>
     <div className="container">
-      <h2>Педагоги Evolution Music</h2>
+      <h2 className="teachers__headline">Педагоги Evolution Music</h2>
       <ul className="teachers__ul">
         {teachers.map((teacher) => {
           return <li key={teacher.name} className="teachers__ul-li">

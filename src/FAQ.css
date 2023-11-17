@@ -64,3 +64,15 @@
     max-width: 20px;
     fill: white;
 }
+
+@media screen and (max-width: 767px) {
+    .faq__headline {
+      font-size: 36px;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .faq__headline  {
+      font-size: 28px;
+    }
+  }

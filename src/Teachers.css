@@ -1,3 +1,6 @@
+.teachers__headline {
+  font-size: 42px;
+}
 .teachers__ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -23,8 +26,27 @@
 
 .teachers__ul-li-headline {
   margin: 15px 0 0 0;
+  font-size: 24px;
 }
 
 .teachers__ul-li-p {
   margin: 15px 0 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .teachers__headline  {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .teachers__headline  {
+    font-size: 28px;
+  }
+  /* .students__categories-li {
+      font-size: 14px;
+  }
+  .students__categories-li-svg {
+      max-width: 20px;
+  } */
 }
