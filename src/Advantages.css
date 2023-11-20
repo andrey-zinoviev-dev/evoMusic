@@ -150,7 +150,7 @@
 
 @media screen and (max-width: 1439px) {
   .advantages__ul {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 280px));
+    /* grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); */
   }
   .advantages__ul-li {
     /* height: 280px; */

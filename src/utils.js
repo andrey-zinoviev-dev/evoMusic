@@ -25,7 +25,7 @@ export const galleryImages = [
 
 export const teachers = [
     {
-        name: "Эд Хапбутдинов",
+        name: "Эд Хупбутдинов",
         image: new URL('./assets/Ed.jpg', import.meta.url).href,
         exp: "6 лет преподавания. Звукорежиссер, саунд-продюсер",
         favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"]
@@ -55,31 +55,26 @@ export const students = [
         name: "Ян Емелин", 
         image:  new URL("./assets/Yan.jpg", import.meta.url).href,
         exp: "20 уроков",
-    }, 
-    {
-        name: "Вадим Печников", 
-        image: new URL("./assets/Vadim.jpg", import.meta.url).href,
-        exp: "12 уроков"
-    }, 
+    },
     {
         name: "Камилла Галимуллина", 
         image: new URL("./assets/Kamilla.jpg", import.meta.url).href,
-        exp: "100 уроков",
+        exp: "12 уроков",
     }, 
     {
         name: "Лилия Рахматулина",
         image: new URL("./assets/Lilya.jpg", import.meta.url).href,
-        exp: "9 уроков",
+        exp: "27 уроков",
     },
     {
         name: "Андрей Зиновьев",
         image: new URL("./assets/Andrey.jpg", import.meta.url).href,
-        exp: "1000 уроков",
+        exp: "50 уроков",
     },
     {
         name: "Артем Шустер",
         image: new URL("./assets/photo_2023-10-17_06-51-22-min.jpg", import.meta.url).href,
-        exp: "12 уроков",
+        exp: "23 урока",
     }
 ];
 

@@ -19,14 +19,15 @@
 
 .teachers__ul-li-img {
   width: 100%;
-  aspect-ratio: 0.5;
+  aspect-ratio: 1/1;
+  /* aspect-ratio: 0.5; */
   object-fit: cover;
   border-radius: 4px;
 }
 
 .teachers__ul-li-headline {
   margin: 15px 0 0 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .teachers__ul-li-p {

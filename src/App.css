@@ -4,6 +4,8 @@
   /* margin: 0 auto; */
   /* padding: 2rem; */
   text-align: center;
+  position: relative;
+  background-color: black;
 }
 
 .logo {

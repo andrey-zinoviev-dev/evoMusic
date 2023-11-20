@@ -5,8 +5,8 @@
     /* padding: 10px 30px; */
     padding: 10px 10%;
     box-sizing: border-box;
-    /* position: sticky; */
-    position: fixed;
+    position: sticky;
+    /* position: fixed; */
     width: 100%;
     top: 0px;
     z-index: 4;
@@ -38,6 +38,12 @@
 .header__ul-li button:hover{
     background-color: #646cff;
     border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .header__ul {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 540px) {

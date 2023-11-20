@@ -1,4 +1,6 @@
+import React from "react";
 import { galleryImages } from "./utils";
+// const galleryImages = React.lazy(() => import("./utils"));
 import "./Gallery.css";
 export default function Gallery() {
     return (
