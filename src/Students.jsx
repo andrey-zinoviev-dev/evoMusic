@@ -32,8 +32,7 @@ export default function Students() {
       opacity: 0,
     }
   };
-  //states
-  const [selectedStudent, setSelectedStudent] = React.useState({});
+  
   // const [selectedCategoryIndex, setSelectedCategoryIndex] = React.useState(0)
 
   //refs
@@ -80,38 +79,23 @@ export default function Students() {
         <ul className="students__ul">
           {students.map((student, index) => {
             return <li className="students__ul-li" key={index}>
-              <button onClick={() => {
-                // console.log('yes');
-                setSelectedStudent(student);
-              }} className="students__ul-btn">
+              {/* <button className="students__ul-btn"> */}
                 <img className="students__ul-li-img" src={student.image} alt={student.name}></img>
                 <h4 className="students__ul-li-headline">{student.name}</h4>
                 <p className="students__ul-li-p">{student.exp}</p>
-                <a className="students__ul-li-a" target="_blank" rel="noopener noreferrer">
+                <a href="./" className="students__ul-li-a" target="_blank" rel="noopener noreferrer">
                   <p>Посмотреть прогресс</p>
                   <svg style={{rotate: "-45deg", scale: "0.75"}} width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M26.3877 13.0607C26.9735 12.4749 26.9735 11.5251 26.3877 10.9393L16.8417 1.3934C16.256 0.807612 15.3062 0.807612 14.7204 1.3934C14.1346 1.97918 14.1346 2.92893 14.7204 3.51472L23.2057 12L14.7204 20.4853C14.1346 21.0711 14.1346 22.0208 14.7204 22.6066C15.3062 23.1924 16.256 23.1924 16.8417 22.6066L26.3877 13.0607ZM0.327026 13.5H25.327V10.5H0.327026V13.5Z" fill="white"/>
                   </svg>
                 </a>
-              </button>
+              {/* </button> */}
 
               {/* <img className="students__ul-li-img" src={`/src/assets/${student.image}`}></img> */}
             </li>
           })}
         </ul>
       </div>
-      {selectedStudent.name && <div className="students__selected">
-        <div className="students__selected-content">
-          <button onClick={() => {
-            setSelectedStudent({});
-          }}>Закрыть</button>
-          <h3 className="students__selected-headline">Как {selectedStudent.name} поет?</h3>
-          <div className="students__selected-content-wrapper">
-            <img className="students__selected-content-wrapper-img" src={selectedStudent.image}></img>
-            <p className="students__selected-content-wrapper-p">{selectedStudent.name} занимается уже {selectedStudent.exp}</p>
-          </div>
-        </div>
-      </div>}
     </section>
   )
 }

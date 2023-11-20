@@ -39,7 +39,7 @@ export const teachers = [
     {
         name: "Лера Козлова",
         image: new URL('./assets/Lera.jpg', import.meta.url).href,
-        exp: "6 лет преподавания. Звукорежиссер, саунд-продюсер",
+        exp: "4 года преподавания. Педагог по вокалу, фортепиано",
         favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"]
     },
     {
