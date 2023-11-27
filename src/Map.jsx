@@ -18,7 +18,8 @@ export default function Map({scrollToMap, setScrollToMap}) {
       <div className="container">
       <h2 className="map__headline-h">Где мы на карте</h2>
         <div className="map__wrapper">
-          <img className="map__img" src={EvoMap}></img>
+        <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=166324182622" width="100%" height="400" frameborder="0"></iframe>
+          {/* <img className="map__img" src={EvoMap}></img> */}
           <div className="map__text">
             <h4 className="map__text-headline">Как нас найти и с нами связаться</h4>
             <ul className="map__text-ul">
@@ -28,7 +29,7 @@ export default function Map({scrollToMap, setScrollToMap}) {
               </li>
               <li className="map__text-ul-li" key="phone">
                 <p>Телефон</p>
-                <p>+7(499)123-45-55</p>
+                <p>+7(910)415-44-16</p>
               </li>
               <li className="map__text-ul-li" key="hours">
                 <p>Время работы</p>

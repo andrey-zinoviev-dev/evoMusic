@@ -16,11 +16,16 @@ export default function Offer() {
         {/* </div> */}
         <h2 className="offer__text-headline">Что ты получишь за урок</h2>
         <ul className="offer__benefits">
-          {benefits.map((benefit) => {
+          {benefits.map((benefit, index) => {
             return <li className="offer__benefits-li" key={benefit.title}>
-              <h4 className="offer__benefits-li-h">{benefit.title}</h4>
-              <div className="offer__benefits-li-div"></div>
-              <p className="offer__benefits-li-p">{benefit.desc}</p>
+              <span className="offer__benefits-li-span">0{index + 1}</span>
+              <div className="offer__benefits-li-innerdiv">
+                <h4 className="offer__benefits-li-h">{benefit.title}</h4>
+                {/* <div className="offer__benefits-li-div"></div> */}
+                <p className="offer__benefits-li-p">{benefit.desc}</p>
+              </div>
+
+              
             </li>
           })}
         </ul>

@@ -78,6 +78,7 @@
   /* padding: 25px; */
   padding: 16px 25px;
   width: 100%;
+  position: relative;
   /* transition: all 0.5s ease-in-out;
   cursor: pointer; */
 }
@@ -141,6 +142,17 @@
   fill: none;
   stroke: white;
   stroke-width: 15px;
+}
+
+.advantages__ul-li-span {
+  position: absolute;
+  top: 45%;
+  /* bottom: 0; */
+  /* left: 82%; */
+  font-size: 120px;
+  line-height: 1;
+  /* color: transparent;
+  -webkit-text-stroke: 2px white; */
 }
 /* .advantages__ul-li-bg {
   border-radius: 32% 68% 35% 65% / 30% 30% 70% 70% ;

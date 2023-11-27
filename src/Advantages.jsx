@@ -1,5 +1,6 @@
 import React from "react";
 import "./Advantages.css";
+import { advantages } from "./utils";
 // import AdvantageCover from "./assets/the-ultimate-guide-to-buying-micropone-for-recording-studio_1.png";
 
 export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) {
@@ -17,7 +18,20 @@ export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) 
       <div className="container">
         <h2 className="advantages__text-headline">Почему люди выбирают нас</h2>
         <ul className="advantages__ul">
-          <li key="adv_00" className="advantages__ul-li">
+          {advantages.map((advantage, index) => {
+            return <li className="advantages__ul-li" key={advantage.title}>
+              <div className="advantages__ul-li-text">
+                <h4 className="advantages__ul-li-headline">Запись голоса</h4>
+                <div className="advantages__ul-li-text-color"></div>
+                <p className="advantages__ul-li-text-p">Голос сразу записывается во время занятия вокалом для исправления ошибок</p>
+              </div>
+              <div className="advantages__ul-li-category">
+                <span className="advantages__ul-li-span">0{index + 1}</span>
+                <p className="advantages__ul-li-p">{advantage.category}</p>
+              </div>
+            </li>
+          })}
+          {/* <li key="adv_00" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
               <h4 className="advantages__ul-li-headline">Запись голоса</h4>
               <div className="advantages__ul-li-text-color"></div>
@@ -27,8 +41,8 @@ export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) 
               <svg className="advantages__ul-li-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M96 96V256c0 53 43 96 96 96s96-43 96-96H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V192H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80V128H208c-8.8 0-16-7.2-16-16s7.2-16 16-16h80c0-53-43-96-96-96S96 43 96 96zM320 240v16c0 70.7-57.3 128-128 128s-128-57.3-128-128V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v24z"/></svg>
               <p className="advantages__ul-li-p">Навыки</p>
             </div>
-            {/* <div className="advantages__ul-li-bg"></div> */}
-            {/* <div></div> */}
+            <div className="advantages__ul-li-bg"></div>
+            <div></div>
           </li>
           <li key="adv_03" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
@@ -40,8 +54,8 @@ export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) 
               <svg className="advantages__ul-li-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg>
               <p className="advantages__ul-li-p">График</p>
             </div>
-            {/* <img style={{maxWidth: 87}} src={Advantage4Pic}></img> */}
-            {/* <p className="advantages__ul-li-p">выбор времени занятий - выбирает сам ученик в промежутке с 11 до 23; заморозка уроков на любой срок - пока все не выходишь ничего не сгорит</p> */}
+            <img style={{maxWidth: 87}} src={Advantage4Pic}></img>
+            <p className="advantages__ul-li-p">выбор времени занятий - выбирает сам ученик в промежутке с 11 до 23; заморозка уроков на любой срок - пока все не выходишь ничего не сгорит</p>
           </li>
           <li key="adv_01" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
@@ -54,8 +68,8 @@ export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) 
               <p className="advantages__ul-li-p">Музыкальность</p>
             </div>
             
-            {/* <img style={{maxWidth: 40}} src={Advantage2Pic}></img> */}
-            {/* <p className="advantages__ul-li-p">В школе есть комната со сценой и зеркалами, в которой идет отработка поведения при выступлении,  зажимов и стеснений при выступлении, а также сценической речи</p> */}
+            <img style={{maxWidth: 40}} src={Advantage2Pic}></img>
+            <p className="advantages__ul-li-p">В школе есть комната со сценой и зеркалами, в которой идет отработка поведения при выступлении,  зажимов и стеснений при выступлении, а также сценической речи</p>
           </li>
           <li key="adv_02" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
@@ -68,7 +82,7 @@ export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) 
               <p className="advantages__ul-li-p">Запись</p>
             </div>
             
-            {/* <p className="advantages__ul-li-p">Профессионально записываем песни в студии в школе и снимаем клипы видео продакшеном, а также издаем творчество через партнеров Правда Records и Craft Core</p> */}
+            <p className="advantages__ul-li-p">Профессионально записываем песни в студии в школе и снимаем клипы видео продакшеном, а также издаем творчество через партнеров Правда Records и Craft Core</p>
           </li>
           <li key="adv_04" className="advantages__ul-li">
             <div className="advantages__ul-li-text">
@@ -91,7 +105,7 @@ export default function Advantages({scrollToAdvantages, setScrollToAdvantages}) 
               <svg className="advantages__ul-li-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z"/></svg>
               <p className="advantages__ul-li-p">Продвижение</p>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="advantages__cover"></div>

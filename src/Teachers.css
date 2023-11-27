@@ -34,6 +34,10 @@
   margin: 15px 0 0 0;
 }
 
+.teachers__ul-li-a {
+  margin: auto 0 0 0;
+}
+
 @media screen and (max-width: 767px) {
   .teachers__headline  {
     font-size: 36px;

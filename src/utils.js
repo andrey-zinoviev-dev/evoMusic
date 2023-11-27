@@ -16,9 +16,9 @@ export const aboutSchoolPoints = [
 
 export const galleryImages = [
     new URL('./assets/IMG_6251-18-1-min.jpg', import.meta.url).href,
-    new URL("./assets/photo_2023-10-17_06-51-22-min.jpg", import.meta.url).href,
+    new URL("./assets/photo_2023-10-27_09-02-54-ok.png", import.meta.url).href,
     new URL("./assets/IMG_6465-62-min.jpg", import.meta.url).href,
-    new URL("./assets/IMG_6668-180-min.jpg", import.meta.url).href,
+    new URL("./assets/IMG_7651-225.jpg", import.meta.url).href,
     new URL("./assets/IMG_6694-198-min.jpg", import.meta.url).href,
     new URL("./assets/IMG_6758-243-min.jpg", import.meta.url).href,
 ];
@@ -28,25 +28,29 @@ export const teachers = [
         name: "Эд Хупбутдинов",
         image: new URL('./assets/Ed.jpg', import.meta.url).href,
         exp: "6 лет преподавания. Звукорежиссер, саунд-продюсер",
-        favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"]
+        favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"],
+        link: "https://vk.com/video/playlist/-218105148_1",
     },
     {
         name: "Антон Перцев",
         image: new URL('./assets/Anton.jpg', import.meta.url).href,
         exp: "10 лет преподавания. Вокалист, актер театра и кино, гитарист, теле-радиоведущий, композитор",
-        favs: ["Metallica", "The Police", "Green Day", "A-ha", "HIM", "Staind", "Браво", "Константин Никольский", "Uma2rman", "ДДТ", "Муслим Магамаев"]
+        favs: ["Metallica", "The Police", "Green Day", "A-ha", "HIM", "Staind", "Браво", "Константин Никольский", "Uma2rman", "ДДТ", "Муслим Магамаев"],
+        link: "",
     },
     {
         name: "Лера Козлова",
         image: new URL('./assets/Lera.jpg', import.meta.url).href,
         exp: "4 года преподавания. Педагог по вокалу, фортепиано",
-        favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"]
+        favs: ["Twelve foot ninja", "Spliknot", "Korn", "Polyphia", "Wolfpack"],
+        link: "https://vk.com/video/playlist/-218105148_2",
     },
     {
         name: "Александра Несмеянова",
         image: new URL('./assets/Sasha.jpg', import.meta.url).href,
         exp: "5 лет преподавания. Артист, педагог",
-        favs: ["Rachelle Farrell", "Regina Belle", "Stevie Wonder ", "Kara Marni", "Michael Jackson", "Леонид Агутин", "Алексей Чумаков", "Jamiroquai"]
+        favs: ["Rachelle Farrell", "Regina Belle", "Stevie Wonder ", "Kara Marni", "Michael Jackson", "Леонид Агутин", "Алексей Чумаков", "Jamiroquai"],
+        link: "https://vk.com/video/playlist/-218105148_3",
     }
 ];
 
@@ -55,26 +59,63 @@ export const students = [
         name: "Ян Емелин", 
         image:  new URL("./assets/Yan.jpg", import.meta.url).href,
         exp: "20 уроков",
+        link: "https://vk.com/video-198329452_456239018",
     },
     {
         name: "Камилла Галимуллина", 
         image: new URL("./assets/Kamilla.jpg", import.meta.url).href,
         exp: "12 уроков",
+        link: "https://www.youtube.com/watch?v=E4lF5MGPRNE",
     }, 
     {
         name: "Лилия Рахматулина",
         image: new URL("./assets/Lilya.jpg", import.meta.url).href,
         exp: "27 уроков",
+        link: "https://vk.com/video-182273891_456239207",
     },
     {
         name: "Андрей Зиновьев",
         image: new URL("./assets/Andrey.jpg", import.meta.url).href,
         exp: "50 уроков",
+        link: "https://vk.com/clip7553806_456239239",
     },
     {
         name: "Артем Шустер",
         image: new URL("./assets/photo_2023-10-17_06-51-22-min.jpg", import.meta.url).href,
         exp: "23 урока",
+    }
+];
+
+export const advantages = [
+    {
+        title: "Запись голоса",
+        desc: "Голос сразу записывается во время занятия вокалом для исправления ошибок",
+        category: "Навыки",
+    },
+    {
+        title: "График занятий и заморозка",
+        desc: "Занятия проходят ежедневно с 11:00 до 23:00 в удобное для тебя время. Уроки можно замораживать бессрочно",
+        category: "График"
+    },
+    {
+        title: "Мультинаправленность",
+        desc: "У нас ты можешь совмещать вокал с другими направлениями, а также посетить уроки сценической психологии и актерского мастерства",
+        category: "Музыкальность"
+    },
+    {
+        title: "Наследие",
+        desc: "Вместе с нашими партнерами мы записываем для учеников их первые клипы и песни, которые останутся с ними навсегда",
+        category: "Запись"
+    },
+    {
+        title: "Мастеринг и издание",
+        desc: "Индивидуальная услуга по продвижению твоего творчества: мастеринг, профиль артиста в соцсетях, организация концертов в Москве нашими партнерами",
+        category: "Продвижение"
+    },
+    {
+        title: "Комфорт и профессионализм",
+        desc: "Мы работаем с действующими музыкантами-универсалами с большим опытом работы, а занятия проходят строго по твоим потребностям",
+        category: "Продвижение"
     }
 ];
 

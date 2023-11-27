@@ -12,7 +12,7 @@ export default function Welcome({setScrollToConversion, setLoadedApp}) {
         <div className="welcome__content-text">
             <h1 className="welcome__content-headline">Оживи свою музыкальную мечту в Evolution Music School</h1>
             {/* <img className="welcome__img" src={ArtemNeverlove}></img> */}
-            <p className="welcome__content-p">Применяем эволюционный подход к обучению и созданию артиста: сначала запись вокала, потом оттачивание навыков</p>
+            <p className="welcome__content-p">Наш подход к пению полностью отличается от стандартного обучения музыкальных школ: сначала записываем вокал, чтобы убрать зажимы, а затем оттачиваем навыки, чтобы раскрыть тембр и звучать, как профессиональный артист </p>
             {/* <p className="welcome__content-p">Применяем эволюционный подход к обучению и созданию артиста: сначала запись вокала, потом оттачивание навыков. Современное музыкальное образование и саунд-продакшн для всех!</p> */}
             
             <button onClick={() => {
